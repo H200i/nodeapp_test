@@ -65,7 +65,7 @@ jobs:
 
       - name: Deploy image to Amazon EKS
         run: |
-          kubectl apply -f depservice.yml
+          kubectl apply -f depservice.yaml
           
             
             # End
