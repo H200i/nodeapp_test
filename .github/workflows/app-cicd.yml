@@ -5,14 +5,14 @@
 
 
 
-name: nodejs-cicd
+name: app-cicd
 
 on:
   push:
     branches:
      - master
     paths:
-     - 'src/**'
+     - 'test/**'
 jobs:
 
   build:
