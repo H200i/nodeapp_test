@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nodeapp
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nodeapp
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: 724821/nodeapp:latest
+        image: 094175769936.dkr.ecr.us-east-1.amazonaws.com/nodeapp:latest
         ports:
         - containerPort: 3000
         
@@ -30,7 +30,7 @@ metadata:
 spec:
   selector:
     app: nodeapp 
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 5000
