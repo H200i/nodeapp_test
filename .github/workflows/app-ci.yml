@@ -3,8 +3,6 @@
 # use github.sha as a tag 
 # use oidc role instead of secrets
 
-
-
 name: app-ci
 
 on:
@@ -30,19 +28,9 @@ jobs:
       # Checkout your respository
       - name: Checkout 
         uses: actions/checkout@v3
-        
-     
+      
       - name: Install NPM Dependencies
         run: npm install
       
 
          
-
-
-          
-          
-
-
-
-
-
