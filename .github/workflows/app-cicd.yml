@@ -1,7 +1,7 @@
-# use multiple jobs
 # use github.sha as a tag 
 # use oidc role instead of secrets
 # use gradle
+# save java artifact and use it in dockerfile
 
 
 name: app-cicd
