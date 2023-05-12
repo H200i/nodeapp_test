@@ -74,12 +74,12 @@ jobs:
  
           # deploy-job
           
-      - name: Update kube config
-        run: aws eks update-kubeconfig --name my-eks --region us-east-1
+  #    - name: Update kube config
+  #      run: aws eks update-kubeconfig --name my-eks --region us-east-1
 
-      - name: Deploy image to Amazon EKS
-        run: |
-          kubectl apply -f depservice.yaml
+  #    - name: Deploy image to Amazon EKS
+  #      run: |
+  #        kubectl apply -f depservice.yaml
           
             
             # End
